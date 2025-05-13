@@ -3,9 +3,9 @@ library(seewave)
 library(dplyr)
 
 # ==== USER-DEFINED VARIABLES ====
-species <- "HarpyEagle"
-note_dir <- "C:\\Users\\Jawor\\Desktop\\Playbacks\\Notes\\HarpyEagle_Notes"
-output_dir <- "C:\\Users\\Jawor\\Desktop\\Playbacks\\HarpyEagle_Playbacks"
+species <- "Tayra"
+note_dir <- "C:\\Users\\Jawor\\Desktop\\Playbacks\\Notes\\Tayra_Notes"
+output_dir <- "C:\\Users\\Jawor\\Desktop\\Playbacks\\Tayra_Playbacks"
 n_playbacks <- 100  # Number of playbacks to generate
 silence_rate <- 44100  # Sample rate (adjust if different)
 
@@ -50,6 +50,7 @@ playback_log <- data.frame(
   Note2 = character(),
   Note3 = character(),
   Note4 = character(),
+  AllNotes = character(),
   stringsAsFactors = FALSE
 )
 
@@ -93,7 +94,8 @@ for (i in 1:n_playbacks) {
       Note1 = selected_names[1],
       Note2 = selected_names[2],
       Note3 = selected_names[3],
-      Note4 = selected_names[4]
+      Note4 = selected_names[4],
+      AllNotes = paste(Note1, Note2, Note3, Note4, sep = ", ")
     )
 }
 
