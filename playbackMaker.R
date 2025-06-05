@@ -3,9 +3,9 @@ library(seewave)
 library(dplyr)
 
 # ==== USER-DEFINED VARIABLES ====
-species <- "Tayra"
-note_dir <- "C:\\Users\\Jawor\\Desktop\\Playbacks\\Notes\\Tayra_Notes"
-output_dir <- "C:\\Users\\Jawor\\Desktop\\Playbacks\\Tayra_Playbacks"
+species <- "CrestedEagle"
+note_dir <- "C:\\Users\\Jawor\\Desktop\\Playbacks\\Notes\\CrestedEagle_Notes"
+output_dir <- "C:\\Users\\Jawor\\Desktop\\Playbacks\\CrestedEagle_Playbacks"
 n_playbacks <- 100  # Number of playbacks to generate
 silence_rate <- 44100  # Sample rate (adjust if different)
 
